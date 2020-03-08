@@ -1,41 +1,33 @@
-# OnlineJudge Front End
-[![vue](https://img.shields.io/badge/vue-2.5.13-blue.svg?style=flat-square)](https://github.com/vuejs/vue)
-[![vuex](https://img.shields.io/badge/vuex-3.0.1-blue.svg?style=flat-square)](https://vuex.vuejs.org/)
-[![echarts](https://img.shields.io/badge/echarts-3.8.3-blue.svg?style=flat-square)](https://github.com/ecomfe/echarts)
-[![iview](https://img.shields.io/badge/iview-2.8.0-blue.svg?style=flat-square)](https://github.com/iview/iview)
-[![element-ui](https://img.shields.io/badge/element-2.0.9-blue.svg?style=flat-square)](https://github.com/ElemeFE/element)
-[![Build Status](https://travis-ci.org/QingdaoU/OnlineJudgeFE.svg?branch=master)](https://travis-ci.org/QingdaoU/OnlineJudgeFE)
+# 대구가톨릭대학교 OJ 프론트 엔드 (VER 0.2)
 
->### A multiple pages app built for OnlineJudge. [Demo](https://qduoj.com)
+## 개발자
++ 한재덕
 
 ## Features
 
-+ Webpack3 multiple pages with bundle size optimization
-+ Easy use simditor & Nice codemirror editor
-+ Amazing charting and visualization(echarts)
-+ User-friendly operation
-+ Quite beautiful：)
++ 웹팩3(Webpack3)를 활용한 다중 페이지
++ 쉽게 사용할 수 있는 코드 에디터
++ E-chart를 활용한 시각화 모듈
++ 사용자 친화적인 명령어 기능
 
 ## Get Started
 
-Install nodejs **v8.12.0** first.
+노드 JS **v6.11** 버전이 설치가 되어 있어야 합니다.
 
 ```bash
+# NPM을 이용해 인스톨을 수행합니다.
 npm install
-# we use webpack DllReference to decrease the build time,
-# this command only needs execute once unless you upgrade the package in build/webpack.dll.conf.js
+
+# 웹팩 3 DLL 레퍼런스를 이용해 빌드 시간을 절약합니다.
+# 기본적으로 이 명령어는 build/webpack.dll.conf.js 내부의 패키지를 업그레이드하지 않았다면 한 번만 수행하면 됩니다.
 NODE_ENV=development npm run build:dll
 
-# the dev-server will set proxy table to your backend
+# 개발 서버에서 백 엔드 서버에 프록시 테이블을 설정합니다.
 export TARGET=http://Your-backend
 
-# serve with hot reload at localhost:8080
+# 기본적으로 8080 포트에서 프론트 서버가 생성됩니다.
 npm run dev
 ```
-
-## Screenshots
-
-[Check here.](https://github.com/QingdaoU/OnlineJudge)
 
 ## Browser Support
 
