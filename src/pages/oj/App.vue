@@ -7,7 +7,7 @@
       </transition>
       <div class="footer">
         <p v-html="website.website_footer"></p>
-        <p>Copyright &copy; 2018. <a href="https://blog.naver.com/ndb796">나동빈 Co. All right reserved.</a>
+        <p>Copyright &copy; 2018. <a href="https://https://github.com/jaedeok-han/OnlineJudgeFE">한재덕 Co. All right reserved.</a>
           <span v-if="version">&nbsp; Version: {{ version }}</span>
         </p>
       </div>
